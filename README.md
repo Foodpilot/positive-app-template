@@ -50,6 +50,10 @@ Serve it on `APP_ORIGIN` over HTTPS: the platform only calls public HTTPS addres
 | `/api/billing/*` | Plans, subscribe, current subscription, cancel |
 | `GET /healthz` | Liveness |
 
+## Working with a coding agent
+
+`AGENTS.md` (also loaded through `CLAUDE.md`) gives coding agents the layout, the rules that keep the app safe, and the commands. The agent-oriented index of the documentation is https://developers-staging.foodpilot.tech/llms.txt.
+
 ## Make it yours
 
 - Keep `PLATFORMS` explicit: a platform name from a request is only ever looked up there.
