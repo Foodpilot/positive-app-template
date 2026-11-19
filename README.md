@@ -10,7 +10,7 @@ It shows the whole life of an app:
 4. **Extension slots**: a product tab and an organization overview card.
 5. **Billing**: plans, a subscription, its cancellation.
 
-The guides that explain each part are on the developer portal: **https://developers-staging.foodpilot.tech**. Start with [Run the sample app](https://developers-staging.foodpilot.tech/get-started/sample-app).
+The guides that explain each part are on the developer portal: **https://dev.positive-app.fr**. Start with [Run the sample app](https://dev.positive-app.fr/get-started/sample-app).
 
 ## Start
 
@@ -52,7 +52,7 @@ Serve it on `APP_ORIGIN` over HTTPS: the platform only calls public HTTPS addres
 
 ## Working with a coding agent
 
-`AGENTS.md` (also loaded through `CLAUDE.md`) gives coding agents the layout, the rules that keep the app safe, and the commands. The agent-oriented index of the documentation is https://developers-staging.foodpilot.tech/llms.txt.
+`AGENTS.md` (also loaded through `CLAUDE.md`) gives coding agents the layout, the rules that keep the app safe, and the commands. The agent-oriented index of the documentation is https://dev.positive-app.fr/llms.txt.
 
 ## Make it yours
 

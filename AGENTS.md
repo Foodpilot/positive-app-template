@@ -4,10 +4,10 @@ Instructions for coding agents working on an app built from this template: an ap
 
 ## Documentation
 
-- Index for agents: https://developers-staging.foodpilot.tech/llms.txt (every guide as Markdown, plus the machine-readable contract).
-- App API: https://developers-staging.foodpilot.tech/openapi-3.0.json (OpenAPI 3.0).
-- Manifest: https://developers-staging.foodpilot.tech/schemas/manifest.v1.schema.json (validate `manifest.json` against it).
-- Webhook payloads: https://developers-staging.foodpilot.tech/schemas/webhooks/ (one JSON Schema per topic, listed in llms.txt).
+- Index for agents: https://dev.positive-app.fr/llms.txt (every guide as Markdown, plus the machine-readable contract).
+- App API: https://dev.positive-app.fr/openapi-3.0.json (OpenAPI 3.0).
+- Manifest: https://dev.positive-app.fr/schemas/manifest.v1.schema.json (validate `manifest.json` against it).
+- Webhook payloads: https://dev.positive-app.fr/schemas/webhooks/ (one JSON Schema per topic, listed in llms.txt).
 
 Read the guide of a feature before changing it. Do not invent endpoints, scopes, headers or fields: if the docs and the contract do not have it, it does not exist.
 
