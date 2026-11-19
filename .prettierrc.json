@@ -1,0 +1,26 @@
+{
+  "arrowParens": "always",
+  "bracketSameLine": false,
+  "bracketSpacing": true,
+  "experimentalTernaries": true,
+  "printWidth": 120,
+  "quoteProps": "as-needed",
+  "semi": true,
+  "singleAttributePerLine": false,
+  "tabWidth": 4,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": "*.{css,scss,less}",
+      "options": {
+        "parser": "css"
+      }
+    },
+    {
+      "files": "*.{ts,tsx,js,jsx}",
+      "options": {
+        "parser": "babel-ts"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sample app</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <main>
+            <h1 id="heading">Sample app</h1>
+            <p id="status">Connecting to Foodpilot...</p>
+            <section id="identity" hidden>
+                <h2>Who is here</h2>
+                <pre id="identity-json"></pre>
+            </section>
+            <section id="billing" hidden>
+                <h2>Billing</h2>
+                <p id="billing-status" role="status"></p>
+                <div id="subscription" hidden>
+                    <h3>Your subscription</h3>
+                    <dl>
+                        <dt>Status</dt>
+                        <dd id="subscription-status"></dd>
+                        <dt>Plan</dt>
+                        <dd id="subscription-plan"></dd>
+                        <dt>Current period ends</dt>
+                        <dd id="subscription-period-end"></dd>
+                        <dt>Cancels at period end</dt>
+                        <dd id="subscription-cancel"></dd>
+                    </dl>
+                    <button type="button" id="cancel-subscription">Cancel subscription</button>
+                </div>
+                <h3>Plans</h3>
+                <ul id="plans"></ul>
+            </section>
+            <section id="actions" hidden>
+                <h2>App Bridge</h2>
+                <div class="buttons">
+                    <button type="button" id="toast">Show a toast</button>
+                    <button type="button" id="confirm">Ask to confirm</button>
+                    <button type="button" id="goto-home">Go to Home</button>
+                    <button type="button" id="goto-reports">Go to Reports</button>
+                    <button type="button" id="goto-products">Open Foodpilot products</button>
+                    <button type="button" id="title">Change the title</button>
+                    <button type="button" id="loading">Show loading for 2 s</button>
+                    <button type="button" id="refresh">Refresh identity</button>
+                </div>
+                <p id="result" role="status"></p>
+            </section>
+        </main>
+        <script type="module" src="./main.ts"></script>
+    </body>
+</html>

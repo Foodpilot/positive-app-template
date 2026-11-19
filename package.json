@@ -1,0 +1,45 @@
+{
+  "name": "positive-app-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A working app for the Positive marketplace: OAuth install, webhooks, an embedded page and extension slots with App Bridge, billing.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "^22.22.0"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "start": "node dist/index.js",
+    "manifest": "tsx --env-file-if-exists=.env scripts/manifest.ts",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint --quiet src/ client/ scripts/ test/",
+    "lint:fix": "eslint src/ client/ scripts/ test/ --fix",
+    "prettier": "prettier src/ client/ scripts/ test/ vite.config.ts --check",
+    "prettier:fix": "prettier src/ client/ scripts/ test/ vite.config.ts --write --list-different",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@foodpilot/app-bridge": "^0.1.0",
+    "express": "^5.3.0",
+    "jose": "^6.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.0",
+    "@types/supertest": "^7.2.1",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "supertest": "^7.3.2",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.3",
+    "vite": "^8.1.6",
+    "vitest": "^5.0.5"
+  }
+}

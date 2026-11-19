@@ -1,0 +1,31 @@
+{
+  "manifest_version": 1,
+  "name": "Sample app",
+  "handle": "sample-app",
+  "install_url": "https://sample-app.base.positive.test/install",
+  "app_url": "https://sample-app.base.positive.test/app",
+  "redirect_urls": ["https://sample-app.base.positive.test/oauth/callback"],
+  "scopes": ["read_products", "read_organizations"],
+  "embedded": true,
+  "navigation": [
+    { "label": { "en": "Home", "fr": "Accueil" }, "path": "/app" },
+    { "label": { "en": "Reports", "fr": "Rapports" }, "path": "/app/reports" }
+  ],
+  "extensions": [
+    {
+      "slot": "product.details.tab",
+      "path": "/app/extensions/product",
+      "label": { "en": "Sample facts", "fr": "Infos exemple" }
+    },
+    {
+      "slot": "organization.overview.card",
+      "path": "/app/extensions/overview",
+      "label": { "en": "Sample summary", "fr": "Résumé exemple" }
+    }
+  ],
+  "webhooks": [
+    { "topic": "app/uninstalled", "uri": "https://sample-app.base.positive.test/webhooks" },
+    { "topic": "app_subscription/updated", "uri": "https://sample-app.base.positive.test/webhooks" },
+    { "topic": "app_charge/updated", "uri": "https://sample-app.base.positive.test/webhooks" }
+  ]
+}
